@@ -1,0 +1,444 @@
+body {
+  margin: 0; }
+
+p {
+  color: #33384A;
+  font-family: "Open Sans", sans-serif;
+  font-size: 15px;
+  line-height: 24px;
+  margin: 20px 0px;
+  font-weight: 200; }
+
+ol, ul {
+  color: #33384A;
+  font-family: "Open Sans", sans-serif;
+  font-size: 16px;
+  line-height: 24px; }
+  ol li, ul li {
+    margin: 20px 0px; }
+
+nav {
+  text-align: right;
+  font-family: "Montserrat", sans-serif;
+  font-size: 14px;
+  font-weight: 400;
+  text-transform: uppercase;
+  height: 60px;
+  line-height: 60px;
+  padding: 0px 50px;
+  border-bottom: 0.5px solid #939598; }
+  nav a {
+    color: #6380B6;
+    text-decoration: none;
+    transition: color .25s ease;
+    -moz-transition: color .25s ease;
+    -webkit-transition: color .25s ease; }
+    nav a:hover {
+      color: #F172A4; }
+  @media screen and (max-width: 767px) {
+    nav {
+      padding: 0px 10px; } }
+
+.nav-section {
+  display: inline-block; }
+
+#nav-home {
+  float: left; }
+  #nav-home img {
+    vertical-align: middle;
+    height: 30px; }
+
+#nav-work {
+  margin-right: 50px; }
+  @media screen and (max-width: 767px) {
+    #nav-work {
+      margin-right: 30px; } }
+
+.hero {
+  text-align: center;
+  color: #33384A;
+  padding-top: 50px;
+  padding-bottom: 30px;
+  border-bottom: 0.5px solid #939598; }
+  .hero h1 {
+    text-transform: uppercase;
+    font-family: "Montserrat", sans-serif;
+    font-weight: 700;
+    font-size: 8vw;
+    margin: 0; }
+    @media screen and (max-width: 992px) {
+      .hero h1 {
+        font-size: 10vw; } }
+  .hero h2 {
+    font-family: "Playfair Display", serif;
+    font-size: 4vw;
+    color: #00C3E7;
+    text-transform: none; }
+    @media screen and (max-width: 767px) {
+      .hero h2 {
+        font-size: 28px; } }
+
+#work {
+  text-align: center;
+  padding-top: 20px; }
+  @media screen and (min-width: 1352px) {
+    #work {
+      padding-left: 10vw;
+      padding-right: 10vw; } }
+
+.project-card {
+  display: inline-block;
+  margin: 20px;
+  width: 295px;
+  height: 477px;
+  text-align: left;
+  overflow: hidden; }
+  @media screen and (max-width: 767px) {
+    .project-card {
+      margin: 20px 0px; } }
+  .project-card .project-image {
+    width: 100%; }
+    .project-card .project-image img {
+      vertical-align: middle;
+      width: 100%;
+      height: auto;
+      transition: opacity .25s ease;
+      -moz-transition: opacity .25s ease;
+      -webkit-transition: opacity .25s ease; }
+      .project-card .project-image img:hover {
+        opacity: 0.6; }
+  .project-card .divider-blue {
+    width: 70px;
+    height: 3px;
+    background-color: #00C3E7;
+    margin: 15px 0px; }
+  .project-card .divider-pink {
+    width: 70px;
+    height: 3px;
+    background-color: #F172A4;
+    margin: 15px 0px; }
+  .project-card .divider-purple {
+    width: 70px;
+    height: 3px;
+    background-color: #8781bd;
+    margin: 15px 0px; }
+  .project-card h5 {
+    text-transform: uppercase;
+    font-family: "Montserrat", sans-serif;
+    font-size: 20px;
+    font-weight: 400;
+    color: #33384A;
+    line-height: 24px;
+    margin-top: -5px; }
+  .project-card p {
+    font-family: "Lora", serif;
+    font-weight: 400;
+    font-style: italic;
+    font-size: 14px;
+    color: #939598;
+    line-height: 24px;
+    margin-top: -30px; }
+
+footer {
+  height: 50px;
+  font-family: "Open Sans", sans-serif;
+  font-size: 12px;
+  font-weight: 200;
+  color: #939598;
+  border-top: 0.5px #939598 solid;
+  line-height: 50px;
+  text-align: center; }
+
+.hero#about {
+  background-image: url("img/cloudy-header.jpg");
+  background-size: cover;
+  color: white;
+  border: 0.1px solid #6380B6;
+  padding-bottom: 60px; }
+  @media screen and (max-width: 600px) {
+    .hero#about h1 {
+      font-size: 48px; } }
+
+.bio {
+  display: flex;
+  /* equal height of the children */
+  background: #33384A; }
+  .bio .col {
+    flex: 1;
+    /* additionally, equal width */
+    padding: 50px; }
+    @media screen and (max-width: 767px) {
+      .bio .col {
+        padding: 10px; } }
+    @media screen and (min-width: 767px) {
+      .bio .col {
+        min-height: 450px; } }
+    .bio .col p {
+      color: white; }
+    .bio .col p.bio-highlight {
+      font-family: "Lora", serif;
+      font-weight: 400;
+      font-style: italic;
+      font-size: 24px;
+      line-height: 36px; }
+  .bio #profile-pic {
+    background-image: url("img/profile-picture.jpg");
+    background-size: cover;
+    background-position: right; }
+    @media screen and (max-width: 767px) {
+      .bio #profile-pic {
+        display: none; } }
+
+.contact {
+  text-align: center; }
+  .contact h2 {
+    font-family: "Montserrat", sans-serif;
+    font-size: 60px;
+    color: #00C3E7;
+    text-transform: uppercase; }
+    @media screen and (max-width: 767px) {
+      .contact h2 {
+        font-size: 48px; } }
+  .contact h3 {
+    font-family: "Lora", serif;
+    font-style: italic;
+    font-weight: 400;
+    font-size: 40px;
+    color: #33384A;
+    margin-top: -20px;
+    margin-bottom: 50px; }
+    @media screen and (max-width: 767px) {
+      .contact h3 {
+        font-size: 30px; } }
+  .contact button.btn-contact {
+    font-family: "Montserrat", sans-serif;
+    font-weight: 400;
+    font-size: 18px;
+    line-height: 46px;
+    width: 150px;
+    height: 50px;
+    background: none;
+    border: 1px #F172A4 solid;
+    border-radius: 50px;
+    text-transform: uppercase;
+    margin: 0px 20px 20px 20px;
+    color: #6380B6;
+    transition: color .25s ease;
+    -moz-transition: color .25s ease;
+    -webkit-transition: color .25s ease; }
+    .contact button.btn-contact:hover {
+      color: #F172A4; }
+
+.no-border {
+  border: none; }
+
+.banner-image {
+  width: 100%; }
+  .banner-image img {
+    width: 100%;
+    height: auto; }
+
+.padding-standard {
+  padding-left: 15vw;
+  padding-right: 15vw; }
+  @media screen and (max-width: 767px) {
+    .padding-standard {
+      padding-left: 10px;
+      padding-right: 10px; } }
+
+.project-intro {
+  color: #33384A;
+  text-align: center; }
+  .project-intro h3 {
+    font-family: "Montserrat", sans-serif;
+    font-size: 48px;
+    text-transform: uppercase;
+    margin-top: 40px; }
+    @media screen and (max-width: 767px) {
+      .project-intro h3 {
+        font-size: 40px; } }
+  .project-intro h4 {
+    font-family: "Lora", serif;
+    font-style: italic;
+    font-size: 24px;
+    line-height: 36px;
+    margin-top: 0px;
+    margin-bottom: 80px;
+    font-weight: 400; }
+    @media screen and (max-width: 767px) {
+      .project-intro h4 {
+        font-size: 18px; } }
+  .project-intro p {
+    margin-top: -30px; }
+  .project-intro .type-blue {
+    width: 15px;
+    height: 15px;
+    border-radius: 15px;
+    background-color: #00C3E7;
+    display: inline-block;
+    margin: 10px 10px 15px 10px; }
+  .project-intro .type-pink {
+    width: 15px;
+    height: 15px;
+    border-radius: 15px;
+    background-color: #F172A4;
+    display: inline-block;
+    margin: 10px 10px 15px 10px; }
+  .project-intro .type-purple {
+    width: 15px;
+    height: 15px;
+    border-radius: 15px;
+    background-color: #8781bd;
+    display: inline-block;
+    margin: 10px 10px 15px 10px; }
+
+h2 {
+  font-family: "Montserrat", sans-serif;
+  font-size: 16px;
+  color: #33384A;
+  text-transform: uppercase; }
+
+.img-fit {
+  margin-top: 50px;
+  margin-bottom: 50px;
+  text-align: center; }
+  .img-fit img {
+    width: 100%;
+    height: auto; }
+
+.row-equal {
+  display: flex;
+  /* equal height of the children */ }
+
+.col {
+  flex: 1;
+  /* additionally, equal width */ }
+
+.caption {
+  font-style: italic;
+  text-align: center;
+  color: #939598;
+  margin-bottom: 30px;
+  margin-top: -30px; }
+
+.row-3 {
+  text-align: center; }
+  @media screen and (min-width: 992px) {
+    .row-3 {
+      display: flex;
+      justify-content: space-between; } }
+  .row-3 .col-3 {
+    text-align: left;
+    vertical-align: top; }
+    @media screen and (min-width: 992px) {
+      .row-3 .col-3 {
+        width: 30%; } }
+
+.row-4 {
+  text-align: center; }
+  @media screen and (min-width: 992px) {
+    .row-4 {
+      display: flex;
+      justify-content: space-between; } }
+  .row-4 .col-4 {
+    text-align: left;
+    vertical-align: top; }
+    @media screen and (min-width: 992px) {
+      .row-4 .col-4 {
+        width: 22%; } }
+
+.row-2-1 {
+  text-align: center; }
+  @media screen and (min-width: 992px) {
+    .row-2-1 {
+      display: flex;
+      justify-content: space-between; } }
+  .row-2-1 .col-2-1 {
+    text-align: left;
+    vertical-align: top; }
+    @media screen and (min-width: 992px) {
+      .row-2-1 .col-2-1 {
+        width: 60%; } }
+  .row-2-1 .col-1-1 {
+    text-align: left;
+    vertical-align: top; }
+    @media screen and (min-width: 992px) {
+      .row-2-1 .col-1-1 {
+        width: 30%; } }
+
+.row-2 {
+  text-align: center; }
+  @media screen and (min-width: 992px) {
+    .row-2 {
+      display: flex;
+      justify-content: space-between; } }
+  .row-2 .col-2 {
+    text-align: left;
+    vertical-align: top; }
+    @media screen and (min-width: 992px) {
+      .row-2 .col-2 {
+        width: 45%; } }
+    @media screen and (max-width: 991px) {
+      .row-2 .col-2 .btn-margin {
+        margin-top: 20px; } }
+
+.highlight {
+  background: #EEE;
+  padding-top: 30px;
+  padding-bottom: 30px; }
+
+.highlight-link {
+  background: #00C3E7;
+  text-align: center;
+  padding: 100px 0px; }
+  .highlight-link button {
+    background: white;
+    color: #00C3E7;
+    font-family: "Montserrat", sans-serif;
+    font-size: 18px;
+    height: 50px;
+    border: none;
+    padding: 0px 30px;
+    border-radius: 50px;
+    text-transform: uppercase;
+    transition: background .25s ease;
+    -moz-transition: background .25s ease;
+    -webkit-transition: background .25s ease; }
+    .highlight-link button:hover {
+      background: #33384A; }
+
+.highlight-scenario {
+  border-radius: 20px;
+  padding: 20px 30px;
+  background-color: #EEE; }
+
+.project-index {
+  background-color: #33384A;
+  padding-top: 50px;
+  padding-bottom: 40px; }
+  .project-index .row-3 .col-3 {
+    text-align: center; }
+    .project-index .row-3 .col-3 h2 {
+      color: white; }
+    .project-index .row-3 .col-3 p {
+      color: white; }
+      .project-index .row-3 .col-3 p.current-project {
+        text-decoration: underline; }
+      .project-index .row-3 .col-3 p:hover {
+        font-weight: 600; }
+
+.project-footer {
+  background-color: #33384A;
+  top-border: white;
+  color: white; }
+
+hr {
+  border: 0.5px #6380B6 solid; }
+
+.shadow {
+  box-shadow: -2px 3px 5px #ddd; }
+
+a {
+  text-decoration: none; }
+
+/*# sourceMappingURL=hkathy.css.map */
