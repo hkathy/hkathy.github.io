@@ -87,7 +87,7 @@ nav {
     text-transform: uppercase;
     font-family: $montserrat;
     font-weight: 700;
-    font-size: 8vw;
+    font-size: 7vw;
     margin: 0;
     @media screen and (max-width: 992px) {
       font-size: 10vw;
@@ -125,20 +125,60 @@ nav {
   @media screen and (max-width: 767px) {
     margin: 20px 0px;
   }
+
   .project-image {
     width: 100%;
-    img {
-      vertical-align: middle;
-      width: 100%;
-      height: auto;
+    height: 77.98%;
+    background-size:cover;
+
+    &#img-basa {
+      background: url(img/thumbnail/basa.jpg);
+    }
+    &#img-signacare {
+      background: url(img/thumbnail/signacare.jpg);
+    }
+    &#img-ucsdbox {
+      background: url(img/thumbnail/boxoffice.jpg);
+    }
+    &#img-piggy {
+      background: url(img/thumbnail/piggy.jpg);
+    }
+    &#img-mingo {
+      background: url(img/thumbnail/mingo.jpg);
+    }
+    &#img-jsacard {
+      background: url(img/thumbnail/jsacard.jpg);
+    }
+    &#img-matsuri {
+      background: url(img/thumbnail/matsuri.jpg);
+    }
+    &#img-cn {
+      background: url(img/thumbnail/couleurnature.jpg);
+    }
+
+    .overlay {
+      background:rgba(5,10,30,.8);
+      opacity:0;
       transition: opacity .25s ease;
       -moz-transition: opacity .25s ease;
       -webkit-transition: opacity .25s ease;
-      &:hover {
-        opacity:0.6;
+      height: 100%;
+      width: 100%;
+      overflow: hidden;
+
+      .description {
+        color: white;
+        font-size: 18px;
+        margin: 16px 20px;
+        line-height: 30px;
       }
     }
+
+    &:hover .overlay {
+      opacity:1;
+    }
   }
+
   .divider-blue {
     width: 70px;
     height: 3px;

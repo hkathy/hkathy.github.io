@@ -64,7 +64,7 @@ nav {
     text-transform: uppercase;
     font-family: "Montserrat", sans-serif;
     font-weight: 700;
-    font-size: 8vw;
+    font-size: 7vw;
     margin: 0; }
     @media screen and (max-width: 992px) {
       .hero h1 {
@@ -97,16 +97,41 @@ nav {
     .project-card {
       margin: 20px 0px; } }
   .project-card .project-image {
-    width: 100%; }
-    .project-card .project-image img {
-      vertical-align: middle;
-      width: 100%;
-      height: auto;
+    width: 100%;
+    height: 77.98%;
+    background-size: cover; }
+    .project-card .project-image#img-basa {
+      background: url(img/thumbnail/basa.jpg); }
+    .project-card .project-image#img-signacare {
+      background: url(img/thumbnail/signacare.jpg); }
+    .project-card .project-image#img-ucsdbox {
+      background: url(img/thumbnail/boxoffice.jpg); }
+    .project-card .project-image#img-piggy {
+      background: url(img/thumbnail/piggy.jpg); }
+    .project-card .project-image#img-mingo {
+      background: url(img/thumbnail/mingo.jpg); }
+    .project-card .project-image#img-jsacard {
+      background: url(img/thumbnail/jsacard.jpg); }
+    .project-card .project-image#img-matsuri {
+      background: url(img/thumbnail/matsuri.jpg); }
+    .project-card .project-image#img-cn {
+      background: url(img/thumbnail/couleurnature.jpg); }
+    .project-card .project-image .overlay {
+      background: rgba(5, 10, 30, 0.8);
+      opacity: 0;
       transition: opacity .25s ease;
       -moz-transition: opacity .25s ease;
-      -webkit-transition: opacity .25s ease; }
-      .project-card .project-image img:hover {
-        opacity: 0.6; }
+      -webkit-transition: opacity .25s ease;
+      height: 100%;
+      width: 100%;
+      overflow: hidden; }
+      .project-card .project-image .overlay .description {
+        color: white;
+        font-size: 18px;
+        margin: 16px 20px;
+        line-height: 30px; }
+    .project-card .project-image:hover .overlay {
+      opacity: 1; }
   .project-card .divider-blue {
     width: 70px;
     height: 3px;
