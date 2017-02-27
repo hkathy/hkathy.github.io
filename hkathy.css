@@ -14,8 +14,9 @@ ol, ul {
   font-family: "Open Sans", sans-serif;
   font-size: 16px;
   line-height: 24px; }
-  ol li, ul li {
-    margin: 20px 0px; }
+
+ol li, ul li {
+  margin: 20px 0px; }
 
 nav {
   text-align: right;
@@ -35,10 +36,10 @@ nav {
     -webkit-transition: color .25s ease; }
     nav a:hover {
       color: #F172A4; }
-  @media screen and (max-width: 767px) {
-    nav {
-      padding: 0px 10px; } }
 
+@media screen and (max-width: 767px) {
+  nav {
+    padding: 0px 10px; } }
 .nav-section {
   display: inline-block; }
 
@@ -50,10 +51,10 @@ nav {
 
 #nav-work {
   margin-right: 50px; }
-  @media screen and (max-width: 767px) {
-    #nav-work {
-      margin-right: 30px; } }
 
+@media screen and (max-width: 767px) {
+  #nav-work {
+    margin-right: 30px; } }
 .hero {
   text-align: center;
   color: #33384A;
@@ -66,26 +67,26 @@ nav {
     font-weight: 700;
     font-size: 7vw;
     margin: 0; }
-    @media screen and (max-width: 992px) {
-      .hero h1 {
-        font-size: 10vw; } }
   .hero h2 {
     font-family: "Playfair Display", serif;
     font-size: 4vw;
     color: #00C3E7;
     text-transform: none; }
-    @media screen and (max-width: 767px) {
-      .hero h2 {
-        font-size: 28px; } }
 
+@media screen and (max-width: 992px) {
+  .hero h1 {
+    font-size: 10vw; } }
+@media screen and (max-width: 767px) {
+  .hero h2 {
+    font-size: 28px; } }
 #work {
   text-align: center;
   padding-top: 20px; }
-  @media screen and (min-width: 1352px) {
-    #work {
-      padding-left: 10vw;
-      padding-right: 10vw; } }
 
+@media screen and (min-width: 1352px) {
+  #work {
+    padding-left: 10vw;
+    padding-right: 10vw; } }
 .project-card {
   display: inline-block;
   margin: 20px;
@@ -93,9 +94,6 @@ nav {
   height: 477px;
   text-align: left;
   overflow: hidden; }
-  @media screen and (max-width: 767px) {
-    .project-card {
-      margin: 20px 0px; } }
   .project-card .project-image {
     width: 100%;
     height: 77.98%;
@@ -118,6 +116,8 @@ nav {
       background: url(img/thumbnail/couleurnature.jpg); }
     .project-card .project-image#img-rift {
       background: url(img/thumbnail/rift.jpg); }
+    .project-card .project-image#img-coco {
+      background: url(img/thumbnail/coco.jpg); }
     .project-card .project-image .overlay {
       background: rgba(5, 10, 30, 0.8);
       opacity: 0;
@@ -166,6 +166,9 @@ nav {
     line-height: 24px;
     margin-top: -30px; }
 
+@media screen and (max-width: 767px) {
+  .project-card {
+    margin: 20px 0px; } }
 footer {
   height: 50px;
   font-family: "Open Sans", sans-serif;
@@ -182,10 +185,10 @@ footer {
   color: white;
   border: 0.1px solid #6380B6;
   padding-bottom: 60px; }
-  @media screen and (max-width: 600px) {
-    .hero#about h1 {
-      font-size: 48px; } }
 
+@media screen and (max-width: 600px) {
+  .hero#about h1 {
+    font-size: 48px; } }
 .bio {
   display: flex;
   /* equal height of the children */
@@ -194,28 +197,28 @@ footer {
     flex: 1;
     /* additionally, equal width */
     padding: 50px; }
-    @media screen and (max-width: 767px) {
-      .bio .col {
-        padding: 10px; } }
-    @media screen and (min-width: 767px) {
-      .bio .col {
-        min-height: 450px; } }
     .bio .col p {
       color: white; }
-    .bio .col p.bio-highlight {
-      font-family: "Lora", serif;
-      font-weight: 400;
-      font-style: italic;
-      font-size: 24px;
-      line-height: 36px; }
+      .bio .col p.bio-highlight {
+        font-family: "Lora", serif;
+        font-weight: 400;
+        font-style: italic;
+        font-size: 24px;
+        line-height: 36px; }
   .bio #profile-pic {
     background-image: url("img/profile-picture.jpg");
     background-size: cover;
     background-position: right; }
-    @media screen and (max-width: 767px) {
-      .bio #profile-pic {
-        display: none; } }
 
+@media screen and (max-width: 767px) {
+  .bio .col {
+    padding: 10px; } }
+@media screen and (min-width: 767px) {
+  .bio .col {
+    min-height: 450px; } }
+@media screen and (max-width: 767px) {
+  .bio #profile-pic {
+    display: none; } }
 .contact {
   text-align: center; }
   .contact h2 {
@@ -223,9 +226,6 @@ footer {
     font-size: 60px;
     color: #00C3E7;
     text-transform: uppercase; }
-    @media screen and (max-width: 767px) {
-      .contact h2 {
-        font-size: 48px; } }
   .contact h3 {
     font-family: "Lora", serif;
     font-style: italic;
@@ -234,9 +234,6 @@ footer {
     color: #33384A;
     margin-top: -20px;
     margin-bottom: 50px; }
-    @media screen and (max-width: 767px) {
-      .contact h3 {
-        font-size: 30px; } }
   .contact button.btn-contact {
     font-family: "Montserrat", sans-serif;
     font-weight: 400;
@@ -256,6 +253,12 @@ footer {
     .contact button.btn-contact:hover {
       color: #F172A4; }
 
+@media screen and (max-width: 767px) {
+  .contact h2 {
+    font-size: 48px; } }
+@media screen and (max-width: 767px) {
+  .contact h3 {
+    font-size: 30px; } }
 .no-border {
   border: none; }
 
@@ -268,11 +271,11 @@ footer {
 .padding-standard {
   padding-left: 15vw;
   padding-right: 15vw; }
-  @media screen and (max-width: 767px) {
-    .padding-standard {
-      padding-left: 10px;
-      padding-right: 10px; } }
 
+@media screen and (max-width: 767px) {
+  .padding-standard {
+    padding-left: 10px;
+    padding-right: 10px; } }
 .project-intro {
   color: #33384A;
   text-align: center; }
@@ -281,9 +284,6 @@ footer {
     font-size: 48px;
     text-transform: uppercase;
     margin-top: 40px; }
-    @media screen and (max-width: 767px) {
-      .project-intro h3 {
-        font-size: 40px; } }
   .project-intro h4 {
     font-family: "Lora", serif;
     font-style: italic;
@@ -292,9 +292,6 @@ footer {
     margin-top: 0px;
     margin-bottom: 80px;
     font-weight: 400; }
-    @media screen and (max-width: 767px) {
-      .project-intro h4 {
-        font-size: 18px; } }
   .project-intro p {
     margin-top: -30px; }
   .project-intro .type-blue {
@@ -319,6 +316,12 @@ footer {
     display: inline-block;
     margin: 10px 10px 15px 10px; }
 
+@media screen and (max-width: 767px) {
+  .project-intro h3 {
+    font-size: 40px; } }
+@media screen and (max-width: 767px) {
+  .project-intro h4 {
+    font-size: 18px; } }
 h2 {
   font-family: "Montserrat", sans-serif;
   font-size: 16px;
@@ -350,65 +353,62 @@ h2 {
 
 .row-3 {
   text-align: center; }
-  @media screen and (min-width: 992px) {
-    .row-3 {
-      display: flex;
-      justify-content: space-between; } }
   .row-3 .col-3 {
     text-align: left;
     vertical-align: top; }
-    @media screen and (min-width: 992px) {
-      .row-3 .col-3 {
-        width: 30%; } }
 
+@media screen and (min-width: 992px) {
+  .row-3 {
+    display: flex;
+    justify-content: space-between; } }
+@media screen and (min-width: 992px) {
+  .row-3 .col-3 {
+    width: 30%; } }
 .row-4 {
   text-align: center; }
-  @media screen and (min-width: 992px) {
-    .row-4 {
-      display: flex;
-      justify-content: space-between; } }
   .row-4 .col-4 {
     text-align: left;
     vertical-align: top; }
-    @media screen and (min-width: 992px) {
-      .row-4 .col-4 {
-        width: 22%; } }
 
+@media screen and (min-width: 992px) {
+  .row-4 {
+    display: flex;
+    justify-content: space-between; } }
+@media screen and (min-width: 992px) {
+  .row-4 .col-4 {
+    width: 22%; } }
 .row-2-1 {
   text-align: center; }
-  @media screen and (min-width: 992px) {
-    .row-2-1 {
-      display: flex;
-      justify-content: space-between; } }
-  .row-2-1 .col-2-1 {
+  .row-2-1 .col-2-1, .row-2-1 .col-1-1 {
     text-align: left;
     vertical-align: top; }
-    @media screen and (min-width: 992px) {
-      .row-2-1 .col-2-1 {
-        width: 60%; } }
-  .row-2-1 .col-1-1 {
-    text-align: left;
-    vertical-align: top; }
-    @media screen and (min-width: 992px) {
-      .row-2-1 .col-1-1 {
-        width: 30%; } }
 
+@media screen and (min-width: 992px) {
+  .row-2-1 {
+    display: flex;
+    justify-content: space-between; } }
+@media screen and (min-width: 992px) {
+  .row-2-1 .col-2-1 {
+    width: 60%; } }
+@media screen and (min-width: 992px) {
+  .row-2-1 .col-1-1 {
+    width: 30%; } }
 .row-2 {
   text-align: center; }
-  @media screen and (min-width: 992px) {
-    .row-2 {
-      display: flex;
-      justify-content: space-between; } }
   .row-2 .col-2 {
     text-align: left;
     vertical-align: top; }
-    @media screen and (min-width: 992px) {
-      .row-2 .col-2 {
-        width: 45%; } }
-    @media screen and (max-width: 991px) {
-      .row-2 .col-2 .btn-margin {
-        margin-top: 20px; } }
 
+@media screen and (min-width: 992px) {
+  .row-2 {
+    display: flex;
+    justify-content: space-between; } }
+@media screen and (min-width: 992px) {
+  .row-2 .col-2 {
+    width: 45%; } }
+@media screen and (max-width: 991px) {
+  .row-2 .col-2 .btn-margin {
+    margin-top: 20px; } }
 .highlight {
   background: #EEE;
   padding-top: 30px;
@@ -467,5 +467,23 @@ hr {
 
 a {
   text-decoration: none; }
+
+p.quote {
+  font-family: "Lora", serif;
+  font-weight: 400;
+  font-style: italic;
+  font-size: 24px;
+  line-height: 30px;
+  color: #00C3E7;
+  text-align: center; }
+
+@media screen and (max-width: 320px) {
+  iframe {
+    width: 300px;
+    height: 169px; } }
+@media screen and (min-width: 321px) {
+  iframe {
+    width: 853px;
+    height: 480px; } }
 
 /*# sourceMappingURL=hkathy.css.map */
