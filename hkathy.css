@@ -117,7 +117,7 @@ nav {
     .project-card .project-image#img-rift {
       background: url(img/thumbnail/rift.jpg); }
     .project-card .project-image#img-coco {
-      background: url(img/thumbnail/cocokh.jpg); }
+      background: url(img/thumbnail/coco.jpg); }
     .project-card .project-image .overlay {
       background: rgba(5, 10, 30, 0.8);
       opacity: 0;
@@ -182,6 +182,9 @@ footer {
 .hero#about {
   background-image: url("img/cloudy-header.jpg");
   background-size: cover;
+  background-repeat: no-repeat;
+  background-position: center;
+  background-attachment: fixed;
   color: white;
   border: 0.1px solid #6380B6;
   padding-bottom: 60px; }
@@ -252,6 +255,8 @@ footer {
     -webkit-transition: color .25s ease; }
     .contact button.btn-contact:hover {
       color: #F172A4; }
+    .contact button.btn-contact:focus {
+      outline: 0; }
 
 @media screen and (max-width: 767px) {
   .contact h2 {
@@ -485,5 +490,43 @@ p.quote {
   iframe {
     width: 853px;
     height: 480px; } }
+
+/* Clip text element */
+.clip-text {
+  /* Color fallback */
+  color: #33384A;
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent; }
+
+.clip-text:before,
+.clip-text:after {
+  position: absolute;
+  content: ''; }
+
+/* Background */
+.clip-text:before {
+  z-index: -2;
+  top: 0;
+  right: 0;
+  bottom: 0;
+  left: 0;
+  background-image: inherit; }
+
+/* Text Background (black zone) */
+.clip-text:after {
+  position: absolute;
+  z-index: -1;
+  top: 0;
+  right: 0;
+  bottom: 0;
+  left: 0;
+  background-color: #fff; }
+
+.clip-text_one {
+  background-image: url("img/cloudy-header.jpg");
+  background-size: 100% 100%;
+  background-repeat: no-repeat;
+  background-position: center;
+  background-attachment: fixed; }
 
 /*# sourceMappingURL=hkathy.css.map */
